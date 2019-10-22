@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>C:\WorkSpace\Lamp\src\Example\Lamp.Test.Web\Lamp.Test.Web.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Lamp.Client\Lamp.Client.csproj" />
+    <ProjectReference Include="..\..\Lamp.Core\Lamp.Core.csproj" />
+    <ProjectReference Include="..\..\Lamp.Swagger\Lamp.Swagger.csproj" />
+  </ItemGroup>
+
+</Project>
